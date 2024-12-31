@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  /* Apply gradient from blue color #4481eb */
+  background: linear-gradient(45deg, #4481eb 0%, #004e92 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 10px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  color: blue;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+  text-align: left; 
+  padding: 20px;
+  max-width: 1000px; 
+  width: 100%;
+}
+
+.content .text {
+  max-width: 50%;
+}
+
+.content .text h1 {
+  font-size: 3em;
+  font-weight: 900; 
+  margin-bottom: 10px;
+}
+
+.content .text h2 {
+  font-size: 1.5em;
+  font-weight: 450; /* Lessen the boldness for h2 */
+  margin-bottom: 20px;
+  color:gainsboro; /* Apply grey color to h2 */
+}
+
+
+
+
+.content img {
+  width: 100%;
+  max-width: 500px;
+  margin-left: 20px; /* Space between text and image */
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Stack the content for smaller screens */
+    text-align: center;
+  }
+
+  .content .text {
+    max-width: 100%; /* Allow text to take full width */
+  }
+
+  .content img {
+    margin-left: 0;
+    margin-top: 20px; /* Add margin-top for space between text and image */
+    max-width: 80%; /* Limit image width for smaller screens */
+  }
+}

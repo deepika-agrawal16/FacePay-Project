@@ -4,7 +4,7 @@ document.querySelectorAll('nav a').forEach(link => {
       event.preventDefault(); // Prevent default link behavior (navigation)
       
       // Alert showing the link text content
-      alert(`Navigating to ${link.textContent}`);
+    //   alert(`Navigating to ${link.textContent}`);
       
       // Redirect to the appropriate page based on the link text
       if (link.textContent === 'Home') {

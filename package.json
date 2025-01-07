@@ -1,0 +1,19 @@
+{
+  "name": "jpproject",
+  "version": "1.0.0",
+  "description": "safety.\r Our goal is provide a platform that provide a safe and secure payments.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.3"
+  }
+}
